@@ -1,0 +1,98 @@
+
+.body{
+    font-family: 'Inconsolata', monospace;
+    overflow: hidden;
+
+}
+
+h1{
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(38, 40, 52);
+}
+
+
+.container{
+    margin: 30px auto;
+    background-color: rgb(38, 40, 52);
+    width: 400px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.answer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    height: 15%;
+}
+
+.answer input{
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    width: 250px;
+    background-color: rgb(38, 40, 52);
+    color: rgb(86, 203, 219);
+}
+
+.line{
+    margin-bottom: 30px;
+    background-color: rgb(172, 172, 175);
+    height: 1px;
+    width: 350px;
+}
+
+
+.num ,.op{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: rgb(216, 241, 245);
+    width: 65px;
+    height: 65px;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid rgb(172, 172, 175);
+}
+
+.op{
+    background-color: #E95F78;
+}
+
+.num{
+    background-color: rgb(58, 61, 79);
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows:repeat(5, auto);
+    gap: 20px;
+}
+
+#eq ,#c ,#de{
+    transition: .5s;
+}
+
+#eq:hover{
+    background-color: green;
+}
+
+#c:hover{
+    background-color: crimson;
+}
+
+#del:hover{
+    background-color: orangered;
+}
